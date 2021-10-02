@@ -1,4 +1,5 @@
 #!python
+from flipHelper import *
 from inputHelper import *
 from imageHelper import *
 
@@ -12,4 +13,8 @@ def main():
     set_dims(dims)
     img_type = get_type()
     print("Type of image",img_type)
+    flipd_dec = input("do you wish to toggle img type? (yes/no) ")
+    if(flipd_dec == "yes"):
+        print("Flipping Image...")
+        flip_img(img)
 main()
