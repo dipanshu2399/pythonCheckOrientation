@@ -21,7 +21,6 @@ def set_img_url():
     root = tk.Tk()
     root.withdraw()
     filename = filedialog.askopenfilename()
-    print(filename)
     _URL = os.path.abspath(filename)
 
 # return the url
