@@ -2,6 +2,7 @@
 from flipHelper import *
 from inputHelper import *
 from imageHelper import *
+from pillowHelper import *
 
 # main method
 def main():
@@ -17,4 +18,10 @@ def main():
     if(flipd_dec == "yes"):
         print("Flipping Image...")
         flip_img(img)
+
+    #pillow functionlity
+    pillow_img = get_pillow_img(url)
+    getBasicDetails()
+    
+    
 main()
