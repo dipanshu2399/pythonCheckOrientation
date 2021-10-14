@@ -8,6 +8,8 @@ __all__ = [
 
 import os
 import cv2
+import tkinter as tk
+from tkinter import filedialog
 
 _URL = None
 _IMG = None
@@ -15,8 +17,11 @@ _IMG = None
 # set the url
 def set_img_url():
     global _URL
-    _URL = input('Enter URL: ')
-    _URL = os.path.abspath(_URL)
+    print("choose file from file explorer")
+    root = tk.Tk()
+    root.withdraw()
+    filename = filedialog.askopenfilename()
+    _URL = os.path.abspath(filename)
 
 # return the url
 def get_img_url():
