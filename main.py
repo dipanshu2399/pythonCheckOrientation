@@ -22,6 +22,10 @@ def main():
     #pillow functionlity
     pillow_img = get_pillow_img(url)
     getBasicDetails()
+    grayscale = input(" DO you want to convert an image to grayscale? (yes/no)")
+    if(grayscale == "yes"):
+        print(" Converting into grayscale ...")
+        getGrayscale()
     
     
 main()

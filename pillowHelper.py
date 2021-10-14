@@ -1,7 +1,8 @@
 __all__ = [
     'get_pillow_img',
     'show_pillow_img',
-    'getBasicDetails'
+    'getBasicDetails',
+    'getGrayscale'
 ]
 _PILLOW_IMG = None
 from PIL import Image
@@ -21,5 +22,10 @@ def show_pillow_img():
 def getBasicDetails():
     print(_PILLOW_IMG.format)
     print(_PILLOW_IMG.mode)
+
+#get Grayscaled image
+def getGrayscale():
+    grayImage = _PILLOW_IMG.convert('L')
+    grayImage.show()
     
 
