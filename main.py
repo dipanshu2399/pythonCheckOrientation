@@ -21,6 +21,7 @@ def main():
 
     #pillow functionlity
     pillow_img = get_pillow_img(url)
+    getBasicDetails()
     
     
 main()
